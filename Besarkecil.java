@@ -9,44 +9,26 @@ class Besarkecil {
 
             if (x > y){
                 if (x > z){
-                    System.out.println("terbesar" + x);
                     terbesar= x;
+                    if(y>z) terkecil = z;
                 }else if ( x < z) {
-                    System.out.println("terbesar" + z);
                     terbesar= z;
+                    if(y>z) terkecil=z;
                 }
             }
             
             if ( x < y){
                 if ( y > z){
-                    System.out.println("terbesar " +y);
                     terbesar= y;
+                    if(x>z) terkecil = z;
                 }else if (y < z){
-                    System.out.println("terbesar " + z);
                     terbesar= z;
+                    if(x>z) terkecil = z;
                 } 
             }
-
-            if (y < z){
-                if (x < y) {
-                    System.out.println("terkecil " + x);
-                    terkecil = x;
-                } else if (y < x) {
-                    System.out.println("terkecil " + y);
-                    terkecil = y;
-                }
-            }
-
-            if (z < y) {
-                if (z < x){
-                    System.out.println("terkecil " + z);
-                    terkecil = z;
-                } else if (x < z) {
-                    System.out.println("terkecil " + x);
-                    terkecil = x;
-                }
-            }
-
-            System.out.println((terbesar+terkecil)/2);
+            
+            System.out.println("terbesar "+terbesar);
+            System.out.println("terkecil "+terkecil);
+            System.out.println("rata rata "+ (terbesar+terkecil)/2);
     }
 }
